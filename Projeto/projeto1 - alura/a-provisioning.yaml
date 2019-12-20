@@ -1,0 +1,9 @@
+# Playbook
+---
+- hosts: all
+# o campo tasks define uma lista de comandos que serão executados nos hosts filtrados
+tasks:
+    - shell: 'echo hello > /tmp/world.tx'
+
+# comando executado
+# ansible-playbook a-provisioning.yaml -u ansible -i hosts --private-key ~/.ssh/ansible_key 

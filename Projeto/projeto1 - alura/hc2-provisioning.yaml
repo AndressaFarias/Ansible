@@ -1,0 +1,17 @@
+---
+- hosts: all
+  tasks:
+    - name: 'Instala pacotes do sistema operacional'
+      apt: 
+        name: 
+        - php7.2
+        - apache2
+        - libapache2-mod-php7.2
+        - php7.2-gd
+        - php-ssh2 # libssh2-php
+        #- php5-mcrypt
+        - mysql-server-5.7
+        - python-mysqldb
+        - phpS7.2-mysql
+        state: latest
+      become: yes

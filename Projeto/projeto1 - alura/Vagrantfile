@@ -1,0 +1,38 @@
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "ubuntu/trusty64"
+
+  config.vm.provider "virtualbox" do |v|
+	v.memory = 1024
+  end
+
+  config.vm.define "wordpress" do |m|
+	m.vm.network "private_network", ip: "172.17.177.40"
+  end
+
+end
+
+referencias:
+
+Getting Started with Red Hat Ansible for Google Cloud Platform - https://itnext.io/getting-started-with-red-hat-ansible-for-google-cloud-platform-fa666c42a00c
+
+1. COMO REMOVE O PYTHON 3.4.5 ? - https://www.vivaolinux.com.br/topico/Python/Como-remove-o-python-345 
+
+https://support.scriptcase.net/pt-br/article/1058-permitindo-acesso-remoto-ao-mysql 
+
+https://www.2daygeek.com/start-stop-restart-enable-reload-mysql-mariadb-server-service-in-linux/
+
+https://www.youtube.com/watch?v=VXulm-MTGb0
+
+https://lgsalles.me/como-remover-completamente-o-mysql-do-ubuntu/
+
+https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost
+
+https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys?hl=pt-br
+
+https://ideatip.com.br/gerando-chaves-publica-e-privada-ssh-no-linux/
+
+https://itnext.io/getting-started-with-red-hat-ansible-for-google-cloud-platform-fa666c42a00c
+
+

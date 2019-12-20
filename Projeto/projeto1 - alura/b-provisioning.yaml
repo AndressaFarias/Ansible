@@ -1,0 +1,23 @@
+---
+- hosts: all
+  tasks:
+    - name: 'Instala o php'
+      apt: 
+        name: php # php5, não funcionou, php5.6 não funcionou
+        state: latest
+      become: yes
+      # equivale ao comando: sudo apt-get install php5
+    #- name: php-fpm
+    
+    - name: 'Instala o Apache 2'
+      apt:
+        name: apache2
+        state: latest
+      become: yes
+    
+    - name: 'Instala o modphp'
+      apt:
+        name: libapache2-mod-php # libapache2-mod-php5, nõ funcionou
+        state: latest
+      become: yes
+# comando ansible-playbook b-provisioning.yaml -u ansible -i hosts --private-key ~/.ssh/ansible_key
