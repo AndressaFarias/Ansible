@@ -14,7 +14,7 @@ As máquinas gerenciadas pelo Ansible só precisam do Python e de um servidor SS
 **tasks:** Lista os principais comandos a serem executados nos hosts selecionados.
 
 
-## Alguns conceios de Ansible
+## Alguns concetios de Ansible
 
 * **Inventário** — É uma lista de hosts (nós) podendo ser o nome — www.exemplo.com.br –, o endereço IP — 192.168.0.10 –, uma faixa de nomes ou endereços IP — www[1:9].exemplo.com.br ou 192.168.1.[10:99] — relacionados individualmente ou dentro de um grupo.
 
